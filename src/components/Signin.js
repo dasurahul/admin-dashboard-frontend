@@ -18,7 +18,10 @@ const Signin = () => {
         emailAddress: input.emailAddress,
         password: input.password,
       })
-      .then(() => alert("Signin Successfull"))
+      .then((response) => {
+        console.log(response);
+        alert("Signin Successfull");
+      })
       .catch((error) => console.log(error));
   };
   return (

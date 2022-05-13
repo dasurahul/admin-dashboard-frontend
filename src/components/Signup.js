@@ -30,7 +30,8 @@ const Signup = () => {
           address: input.address,
           password: input.password,
         })
-        .then(() => {
+        .then((response) => {
+          console.log(response);
           alert("Signup Successfully");
           navigate("/signin");
         })
